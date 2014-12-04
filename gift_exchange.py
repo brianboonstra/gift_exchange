@@ -24,3 +24,6 @@ for aunt_or_uncle, grandkids in families.items():
             assignments[kid] = getting_gift_for
             unassigned.remove( getting_gift_for )
             
+for kid in sorted(assignments.keys()):
+    print("{kid} will give a gift to {other_kid}".format(
+          kid=kid, other_kid=assignments[kid]))
