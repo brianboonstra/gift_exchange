@@ -30,7 +30,7 @@ families={'Keith':{
 assignments={}
 unassigned = set(sum([sum(s.values(),[]) for s in families.values()],[]))
 for aunt_or_uncle, grandkids in families.items():
-    # Find the set of kids who are not related to this aunt or uncle
+    # Find the set of kids who are not descendants of this aunt or uncle
     other_gen_1 = families.copy()
     del other_gen_1[aunt_or_uncle]
     other_kids = set(sum([sum(s.values(),[]) for s in other_gen_1.values()],[]))
