@@ -1,6 +1,8 @@
 import random
 
 """
+Family 1-1 gift exchange assignments.
+
 This module randomly makes gift assignments among a group of
  second cousins, ensuring no one is assigned a sibling or
  first cousin.
